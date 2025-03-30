@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <div class="container">
+      <header class="navbar">
+        <div class="burger-overlay"></div>
+        <button class="burger-close">❌</button>
+        <a href="index.html"><img class="logo1" src="lo1.png" alt="Logo"></a>
+  
+        <!-- Бургер -->
+        <div class="burger">&#9776;</div>
+  
+        <!-- Меню -->
+        <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </nav>
+          <nav class="main-nav2">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </nav>
+        <div class="contact-info">
+          <a href="tel:+13039618023"><img class="iconsimg" src="phone1.png"></a>
+          <a href="art.install01@gmail.com"><img class="iconsimg" src="gamil1.png"></a>
+          <a href="https://www.instagram.com/art_install_co/?igsh=cTdrcjhiajZnejI4&utm_source=qr#" target="_blank"><img class="iconsimg" src="inst1.png"></a>
+          <a href="https://facebook.com" target="_blank"><img class="iconsimg" src="face1.png"></a>
+        </div>
+      </header>
+  
+      <main class="aboutus_content">
+        <section class="modal-content">
+            <h1>About Us</h1>
+            <img   class="imgartinst" src="ArtInstallRoom.jpg">
+            <p><strong>ArtInstall</strong> is a Colorado-based company specializing in leather restoration, reupholstery, and interior repair for furniture, vehicles, RVs, and boats. With years of experience and a passion for detail, we help our clients bring their interiors back to life — or reimagine them completely.</p>
+
+            <h2>What Makes Us Different?</h2>
+            <p>We believe every piece of furniture, every car seat, and every steering wheel has a story. Our goal is to preserve that story while improving the comfort, appearance, and quality of the surface. Whether you're restoring an old leather couch, reupholstering your restaurant seating, or refreshing your RV interior — we bring the same level of care to every project.</p>
+
+            <ul>
+                <li>We use only high-quality, durable materials</li>
+                <li>We serve both individuals and businesses</li>
+                <li>Custom solutions for residential, automotive, and commercial interiors</li>
+                <li>Clean, reliable, and fast service</li>
+                <li>Flexible scheduling to fit your needs</li>
+            </ul>
+
+            <h2>Based in Denver, Colorado</h2>
+            <p>We proudly serve the greater Denver area and surrounding parts of Colorado. Whether you’re in the heart of the city or the suburbs — we’re happy to help you upgrade and protect your investment.</p>
+
+            <h2>Let’s Get in Touch</h2>
+            <p>If you have a project in mind, don’t hesitate to reach out! We’re happy to answer questions, give recommendations, or provide a free estimate based on photos and a brief description.</p>
+            <p>
+                📧 <a href="mailto:art.install01@gmail.com">art.install01@gmail.com</a><br>
+                📞 <a href="tel:+13039618023">(303) 961-8023</a>
+            </p>
+        </section>
+    </main>
+
+      
+      <section class="contact-baner">
+        <div class="contact1">
+          <h4>Call Now to Get Started!</h4>
+          <h4>OUR HOURS: Mon - Fri 9AM to 5PM</h4>
+          <span class="phone_number2">
+            <img class="phone_icon" src="https://img.icons8.com/ios_filled/512/FFFFFF/apple-phone.png" alt="Phone">
+            <h5>+13039618023</h5>
+          </span>
+        </div>
+      </section>
+      
+      
+  
+    
+  
+    <!-- Скрипт -->
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.main-nav');
+        const overlay = document.querySelector('.burger-overlay');
+        const closeBtn = document.querySelector('.burger-close');
+      
+        const openMenu = () => {
+          nav.classList.add('show');
+          overlay.style.display = 'block';
+          closeBtn.style.display = 'block';
+        };
+      
+        const closeMenu = () => {
+          nav.classList.remove('show');
+          overlay.style.display = 'none';
+          closeBtn.style.display = 'none';
+        };
+      
+        burger.addEventListener('click', openMenu);
+        overlay.addEventListener('click', closeMenu);
+        closeBtn.addEventListener('click', closeMenu);
+      </script>
+  </body>
+  
+</html>

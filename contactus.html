@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <div class="container">
+      <header class="navbar">
+        <div class="burger-overlay"></div>
+        <button class="burger-close">❌</button>
+        <a href="index.html"><img class="logo1" src="lo1.png" alt="Logo"></a>
+  
+        <!-- Бургер -->
+        <div class="burger">&#9776;</div>
+  
+        <!-- Меню -->
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+        <nav class="main-nav2">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="contact-info">
+          <a href="tel:+13039618023"><img class="iconsimg" src="phone1.png"></a>
+          <a href="art.install01@gmail.com"><img class="iconsimg" src="gamil1.png"></a>
+          <a href="https://www.instagram.com/art_install_co/?igsh=cTdrcjhiajZnejI4&utm_source=qr#" target="_blank"><img class="iconsimg" src="inst1.png"></a>
+          <a href="https://facebook.com" target="_blank"><img class="iconsimg" src="face1.png"></a>
+        </div>
+      </header>
+
+      <div class="container3">
+        <h1>ARTINSTALL professionally restores and cleans leather furniture.</h1>
+        <h2>Colorado – Denver</h2>
+        <p>+13039618023 | art.install01@gmail.com</p>
+        <p></p>
+    
+        <div class="info">
+          <p><strong>Looking for an Estimate?</strong><br>
+            Have a question or need an estimate? Just fill out the form below, and we’ll get back to you shortly!</p>
+        </div>
+    
+        <form action="https://formspree.io/f/xnnpbgoe" method="POST">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="_replyto" placeholder="Enter your email" required>
+          
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+          
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="4" placeholder="Describe the damage" required></textarea>
+          
+            <button type="submit">Send</button>
+          </form>
+          
+      </div>
+  
+      
+      
+      <section class="contact-baner">
+        <div class="contact1">
+          <h4>Call Now to Get Started!</h4>
+          <h4>OUR HOURS: Mon - Fri 9AM to 5PM</h4>
+          <span class="phone_number2">
+            <img class="phone_icon" src="https://img.icons8.com/ios_filled/512/FFFFFF/apple-phone.png" alt="Phone">
+            <h5>+13039618023</h5>
+          </span>
+        </div>
+      </section>
+      
+      
+  
+    
+  
+    <!-- Скрипт -->
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.main-nav');
+        const overlay = document.querySelector('.burger-overlay');
+        const closeBtn = document.querySelector('.burger-close');
+      
+        const openMenu = () => {
+          nav.classList.add('show');
+          overlay.style.display = 'block';
+          closeBtn.style.display = 'block';
+        };
+      
+        const closeMenu = () => {
+          nav.classList.remove('show');
+          overlay.style.display = 'none';
+          closeBtn.style.display = 'none';
+        };
+      
+        burger.addEventListener('click', openMenu);
+        overlay.addEventListener('click', closeMenu);
+        closeBtn.addEventListener('click', closeMenu);
+      </script>
+  </body>
+  
+</html>
